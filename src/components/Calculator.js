@@ -9,6 +9,7 @@ class Calculator extends React.Component {
     };
   }
   render() {
+    
     return (
       <div className="Grid-container">
         <div className="Result">0</div>
