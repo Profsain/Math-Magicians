@@ -1,0 +1,36 @@
+
+.Grid-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 3px;
+  width: 600px;
+  max-width: 100%;
+}
+
+.Grid-container > div {
+  padding: 8px;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.Result {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: right;
+  background-color: #858694;
+}
+
+.Number {
+  background-color: #e0e0e0;
+  text-align: center;
+}
+
+.Operators {
+  background-color: #f5913e;
+}
+
+.Zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
