@@ -9,8 +9,8 @@ class App extends React.Component {
 
     };
   }
+  
   render() {
-    
     return (
       <div className="App">
         <h1 className="Headline">The Math Magicians</h1>
