@@ -1,4 +1,3 @@
-// eslint-disable-next-line react/prefer-stateless-function
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
