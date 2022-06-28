@@ -36,3 +36,8 @@
   grid-column-start: 1;
   grid-column-end: 3;
 }
+
+.Number:hover, .Operators:hover {
+  cursor: pointer;
+  background-color: #fee2e2;
+}

@@ -2,7 +2,7 @@
 A React web app that allows users to have fun while performing basic mathematical operation like addition, multiplication, subtraction, and division. The app generate math quotes and users can share quotes on social media.
 
 ### Live link
-[Meal App](#)
+[Math Magicians](#)
 
 ## Built With
 - React
@@ -44,4 +44,4 @@ Acknowledgments
 Hat tip to anyone whose code was used
 Microverse Community
 📝 License
-This project is MIT licensed.
+This project is [MIT](./MIT.md) licensed.
