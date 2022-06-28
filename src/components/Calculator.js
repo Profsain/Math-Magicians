@@ -1,8 +1,13 @@
 import '../styles/Calculator.css';
 import React from 'react';
 
-// eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+  }
   render() {
     return (
       <div className="Grid-container">
