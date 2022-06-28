@@ -7,7 +7,8 @@ class Calculator extends React.Component {
     this.state = {
 
     }
-  }
+  };
+  
   render() {
     return (
       <div className="Grid-container">
