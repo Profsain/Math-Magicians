@@ -1,37 +1,57 @@
 import '../styles/Calculator.css';
 import React from 'react';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      total: 0,
+      next: null,
+      operation: null,
     };
+
+    this.calculatorHandler = this.calculatorHandler.bind(this);
   }
 
+  calculatorHandler(buttonName) {
+    const {total, next, operation} = this.state;
+    const newObj = calculate({total, next, operation}, buttonName);
+    this.setState({
+      total: newObj.total,
+      next: newObj.next,
+      operation: newObj.operation,
+    });
+  }
+ 
   render() {
     return (
       <div className="Grid-container">
-        <div className="Result">0</div>
-        <div className="Number">AC</div>
-        <div className="Number">+/-</div>
-        <div className="Number">%</div>
-        <div className="Operators">/</div>
-        <div className="Number">7</div>
-        <div className="Number">8</div>
-        <div className="Number">9</div>
-        <div className="Operators">X</div>
-        <div className="Number">4</div>
-        <div className="Number">5</div>
-        <div className="Number">6</div>
-        <div className="Operators">-</div>
-        <div className="Number">1</div>
-        <div className="Number">2</div>
-        <div className="Number">3</div>
-        <div className="Operators">+</div>
-        <div className="Number Zero">0</div>
-        <div className="Number">.</div>
-        <div className="Operators">=</div>
+        <div className="Result">
+          {this.state.total}
+          {this.state.operation}
+          {this.state.next}
+          
+        </div>
+        <button className="Number" id="ac" onClick={() => this.calculatorHandler('AC')}>AC</button>
+        <button className="Number" id="plus-minus" onClick={() => this.calculatorHandler('+/-')}>+/-</button>
+        <button className="Number" id="modul" onClick={() => this.calculatorHandler('%')}>%</button>
+        <button className="Operators" id="div" onClick={() => this.calculatorHandler('÷')}>÷</button>
+        <button className="Number" id="seven" onClick={() => this.calculatorHandler('7')}>7</button>
+        <button className="Number" id="eight" onClick={() => this.calculatorHandler('8')}>8</button>
+        <button className="Number" id="nine" onClick={() => this.calculatorHandler('9')}>9</button>
+        <button className="Operators" id="multi" onClick={() => this.calculatorHandler('x')}>x</button>
+        <button className="Number" id="four" onClick={() => this.calculatorHandler('4')}>4</button>
+        <button className="Number" id="five" onClick={() => this.calculatorHandler('5')}>5</button>
+        <button className="Number" id="six" onClick={() => this.calculatorHandler('6')}>6</button>
+        <button className="Operators" id="minus" onClick={() => this.calculatorHandler('-')}>-</button>
+        <button className="Number" id="one" onClick={() => this.calculatorHandler('1')}>1</button>
+        <button className="Number" id="two" onClick={() => this.calculatorHandler('2')}>2</button>
+        <button className="Number" id="three" onClick={() => this.calculatorHandler('3')}>3</button>
+        <button className="Operators" id="plus" onClick={() => this.calculatorHandler('+')}>+</button>
+        <button className="Number Zero" id="zero" onClick={() => this.calculatorHandler('0')}>0</button>
+        <button className="Number" id="dot" onClick={() => this.calculatorHandler('.')}>.</button>
+        <button className="Operators" id="equal" onClick={() => this.calculatorHandler('=')}>=</button>
       </div>
     );
   }
