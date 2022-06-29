@@ -23,6 +23,7 @@ class Calculator extends React.Component {
       operation: newObj.operation,
     });
   }
+
   render() {
     const { total, next, operation } = this.state;
     return (
