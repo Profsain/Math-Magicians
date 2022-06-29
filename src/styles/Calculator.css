@@ -8,7 +8,7 @@
   max-width: 100%;
 }
 
-.Grid-container > div {
+.Grid-container > button {
   padding: 8px;
   font-size: 34px;
   font-weight: 700;
@@ -18,6 +18,9 @@
   grid-column-start: 1;
   grid-column-end: 5;
   text-align: right;
+  font-size: 34px;
+  font-weight: 700;
+  padding: 8px;
   padding-right: 22px !important;
   color: #fff;
   background-color: #858694;
