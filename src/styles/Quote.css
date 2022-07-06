@@ -1,0 +1,36 @@
+.Quote-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Quote-left img {
+  width: 430px;
+  max-width: 100%;
+}
+
+.Quote-left h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Quote-right {
+  width: 40%;
+  font-size: 2rem;
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .Quote-main {
+    flex-direction: column;
+    padding: 0 28px;
+  }
+
+  .Quote-right {
+    width: 100%;
+  }
+}

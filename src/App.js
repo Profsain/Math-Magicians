@@ -1,12 +1,16 @@
 import React from 'react';
-import './App.css';
-import Calculator from './components/Calculator';
+import HeaderNav from './components/Header';
+import Home from './components/Home';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="Headline">The Math Magicians</h1>
-      <Calculator />
+      <HeaderNav />
+      <main>
+        <Home />
+      </main>
+      <Footer />
     </div>
   );
 }
