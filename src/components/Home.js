@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/Home.css';
 
 export const Home = () => {
   return (
     <div className='Home'>
       <div className='Home-left'>
-        <h2>You'r Welcome!</h2>
+        <h2>Welcome The Magic Master!</h2>
         <img src='magician-img.jpg' alt='Math magician with smiling face'/>
       </div>
       <div className='Home-right'>
@@ -19,7 +21,7 @@ export const Home = () => {
 
           The Mathemagician is the name of a character in the 1961 children's book The Phantom Tollbooth. He is the ruler of Digitopolis, the kingdom of mathematics.
         </p>
-        <small>Source:<a href='https://en.wikipedia.org/wiki/Mathemagician' target='blank'>www.wikipedia.org</a></small>
+        <Link to={{pathname: "https://en.wikipedia.org/wiki/Mathemagician"}}>sourch: www.wikipedia.org</Link>
       </div>
     </div>
   )
