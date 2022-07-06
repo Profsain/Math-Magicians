@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/CalculatorMain.css'
 import HeaderNav from './Header';
+import { Footer } from '../components/Footer';
 import Calculator from './Calculator';
 
 export const CalculatorMain = () => {
@@ -16,6 +17,7 @@ export const CalculatorMain = () => {
           <Calculator />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

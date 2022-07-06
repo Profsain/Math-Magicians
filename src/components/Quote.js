@@ -1,10 +1,11 @@
 import React from 'react';
 import '../styles/Quote.css';
 import HeaderNav from './Header';
+import { Footer } from '../components/Footer';
 
 export const Quote = () => {
   return (
-    <div>
+    <>
       <HeaderNav />
       <div className="Quote-main">
         <div className="Quote-left">
@@ -18,6 +19,7 @@ export const Quote = () => {
           </p>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }

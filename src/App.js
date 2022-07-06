@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
 import HeaderNav from './components/Header';
 import { Home } from './components/Home';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <main>
         <Home />
       </main>
+      <Footer />
     </div>
   );
 }
