@@ -1,0 +1,16 @@
+.Calculator-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 38px;
+}
+
+.Calculator-left img {
+  width: 300px;
+  margin-right: 190px;
+}
+
+.Calculator-left h2 { 
+  font-size: 2rem;
+}
