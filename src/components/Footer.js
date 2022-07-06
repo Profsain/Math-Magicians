@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/Footer.css'
+import '../styles/Footer.css';
 
-export const Footer = () => {
-  return (
-    <footer className='Footer'>
-      <p>Developer: Husseini Mudi @Microverse Inc</p>
-    </footer>
-  )
-}
+const Footer = () => (
+  <footer className="Footer">
+    <p>Developer: Husseini Mudi @Microverse Inc</p>
+  </footer>
+);
+
+export default Footer;

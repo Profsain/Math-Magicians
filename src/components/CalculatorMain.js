@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/CalculatorMain.css';
 import HeaderNav from './Header';
-import { Footer } from '../components/Footer';
+import Footer from './Footer';
 import Calculator from './Calculator';
 
 const CalculatorMain = () => (
