@@ -4,12 +4,12 @@ import '../styles/Home.css';
 
 export const Home = () => {
   return (
-    <div className='Home'>
-      <div className='Home-left'>
+    <div className="Home">
+      <div className="Home-left">
         <h2>Welcome The Magic Master!</h2>
-        <img src='magician-img.jpg' alt='Math magician with smiling face'/>
+        <img src="magician-img.jpg" alt="Math magician with smiling face"/>
       </div>
-      <div className='Home-right'>
+      <div className="Home-right">
         <p>
           A mathemagician is a mathematician who is also a magician. The term "mathemagic" is believed to have been introduced by Royal Vale Heath with his 1933 book "Mathemagic".
 
@@ -24,5 +24,5 @@ export const Home = () => {
         <Link to={{pathname: "https://en.wikipedia.org/wiki/Mathemagician"}}>sourch: www.wikipedia.org</Link>
       </div>
     </div>
-  )
+  );
 }

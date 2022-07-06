@@ -34,3 +34,19 @@ a:hover {
   text-decoration: underline;
   color: #e7e7e7;
 }
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    flex-direction: column;
+    padding-bottom: 18px;
+  }
+
+  .Header h1 {
+    font-size: 1.5rem;
+  }
+
+  a {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
