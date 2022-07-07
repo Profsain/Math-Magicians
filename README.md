@@ -1,17 +1,16 @@
 # THE MATH MAGICIANS WEP APP
 A React web app that allows users to have fun while performing basic mathematical operation like addition, multiplication, subtraction, and division. The app generate math quotes and users can share quotes on social media.
 
-### Live link
-[Math Magicians](#)
+### Live Demo
+[Math Magicians: Heroku](https://reactmath-magician.herokuapp.com/)
+
+[Math Magicians: Netlify](https://sunny-mousse-15ff05.netlify.app/)
 
 ## Built With
 - React
 - HTML
 - CSS
 - JavaScript
-
-## Live Demo (if available)
-Live Demo Link
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
