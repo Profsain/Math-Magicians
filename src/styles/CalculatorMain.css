@@ -1,0 +1,29 @@
+.Calculator-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 38px;
+}
+
+.Calculator-left img {
+  width: 300px;
+  max-width: 100%;
+  margin-right: 190px;
+}
+
+.Calculator-left h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .Calculator-main {
+    flex-direction: column;
+    padding: 0 28px;
+  }
+
+  .Calculator-right {
+    width: 100%;
+  }
+}
