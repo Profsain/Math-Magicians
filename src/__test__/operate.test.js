@@ -16,7 +16,7 @@ describe('Math operation testing', () => {
     expect(result).toBe('9');
   });
 
-  test('Divid 9 / 3 should return 3', () => {
+  test('Divid 9 ÷ 3 should return 3', () => {
     const result = operate(9, 3, '÷');
     expect(result).toBe('3');
   });
