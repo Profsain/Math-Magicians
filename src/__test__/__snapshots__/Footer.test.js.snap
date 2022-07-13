@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders component correctly 1`] = `
+<footer
+  className="Footer"
+>
+  <p>
+    Developer: Husseini Mudi @Microverse Inc
+  </p>
+</footer>
+`;

@@ -1,11 +1,9 @@
 import React from 'react';
 import '../styles/Quote.css';
-import HeaderNav from './Header';
 import Footer from './Footer';
 
 const Quote = () => (
   <div>
-    <HeaderNav />
     <div className="Quote-main">
       <div className="Quote-left">
         <h2>Now is quote time! </h2>
