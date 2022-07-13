@@ -2,7 +2,7 @@ import calculate from '../logic/calculate';
 
 describe('Calculate operations test', () => {
   test('Clear calculate result to 0', () => {
-    let result = calculate({}, 'AC');
+    const result = calculate({}, 'AC');
     expect(result.total).toBe(0);
   });
 
@@ -19,9 +19,8 @@ describe('Calculate operations test', () => {
     result = calculate(result, '-');
     result = calculate(result, '5');
     result = calculate(result, '=');
-     expect(result.total).toBe('15');
-    });
-  
+    expect(result.total).toBe('15');
+  });
   test('Calculate 5 x 5 should equal 25', () => {
     let result = calculate({}, '5');
     result = calculate(result, 'x');
