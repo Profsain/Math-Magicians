@@ -1,17 +1,20 @@
 import React from 'react';
-import HeaderNav from './components/Header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
-import Footer from './components/Footer';
+import Quote from './components/Quote';
+import CalculatorMain from './components/CalculatorMain';
+import HeaderNav from './components/Header';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <HeaderNav />
-      <main>
-        <Home />
-      </main>
-      <Footer />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/calculator" element={<CalculatorMain />} />
+        <Route path="/quote" element={<Quote />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
