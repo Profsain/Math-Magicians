@@ -15,7 +15,7 @@ function App() {
         <Route path="/quote" element={<Quote />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;
