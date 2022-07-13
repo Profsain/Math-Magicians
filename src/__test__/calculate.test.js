@@ -1,6 +1,6 @@
-import calculate from "../logic/calculate";
+import calculate from '../logic/calculate';
 
-describe('Calculate operation test', () => {
+describe('Calculate operations test', () => {
   test('Clear calculate result to 0', () => {
     let result = calculate({}, 'AC');
     expect(result.total).toBe(0);
